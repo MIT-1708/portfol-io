@@ -1,0 +1,19 @@
+var app = angular.module('myApp',["ngRoute"])
+app.config(function($routeProvider){
+    $routeProvider
+    .when('/',{
+        templateUrl:'views/main.html'
+    })
+    .when('/about',{
+        templateUrl:'views/about.html'
+    })
+    .when('/portfolio',{
+        templateUrl:'views/portfolio.html'
+    })
+    .when('/skill',{
+        templateUrl:'views/skill.html'
+    })
+    .otherwise({
+        templateUrl:'views/404.html'
+    })
+})
